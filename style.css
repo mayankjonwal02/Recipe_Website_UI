@@ -1,0 +1,131 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+header {
+  background-image: 
+  /*linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),*/ url(https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3798.jpg?w=360);
+
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 50px;
+  min-height: 400px;
+  margin-right: 60px;
+  font-size: 17px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  /* color: #fff; */
+
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.5 ease;
+}
+
+ul li a:hover {
+  background-color: blue;
+  color: azure;
+}
+
+ul li.active a {
+  background-color: blue;
+  color: azure;
+}
+
+.logo img {
+  float: left;
+  width: 150px;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+
+.main {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.title {
+  position: absolute;
+  top: 48%;
+  left: 36%;
+}
+
+.title h1 {
+  color: deepskyblue;
+  font-size: 70px;
+}
+
+.button {
+  position: absolute;
+  top: 62%;
+  left: 36%;
+}
+
+.btn {
+  border: 1px solid rgb(122, 178, 243);
+  padding: 5px 20px;
+  color: rgb(111, 141, 248);
+  transition: 0.5 ease;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: blue;
+}
+
+.submenu {
+  display: none;
+  top: 6%;
+  position: relative;
+}
+
+.submenu ul {
+  position: absolute;
+}
+
+.main ul li:hover .submenu {
+  display: block;
+
+  position: absolute;
+
+  background-color: rgb(0, 45, 117);
+  margin-top: 26px;
+  margin-left: -8px;
+}
+
+.main ul li:hover .submenu ul {
+  display: block;
+  margin: 12px;
+}
+.main ul li:hover .submenu ul li {
+  width: 75px;
+  padding: 5px;
+  border-bottom: 1px #fff;
+  background: transparent;
+  transition: 0.4 ease;
+  text-align: left;
+  border-radius: 0px;
+}
